@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -32,7 +33,7 @@ public class Report {
     private String projectName;
 
     //@NotNull(message = "Date is Mandatory")
-    private LocalDateTime date;
+    private LocalDate date;
 
     @NotNull(message = "Worked hours should not be null")
     @DecimalMin(value = "0.0", message = "Worked hours should be greater than or equal to 0")
