@@ -29,4 +29,9 @@ public class AuthServiceImpl implements AuthService {
         userDto.setName(createdUser.getName());
         return userDto;
     }
+
+    @Override
+    public int getUserCount() {
+        return userRepository.findByUserCount();
+    }
 }
