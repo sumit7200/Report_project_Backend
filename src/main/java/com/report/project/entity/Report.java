@@ -32,7 +32,7 @@ public class Report {
     @NotEmpty(message = "Project Name can't be empty")
     private String projectName;
 
-    //@NotNull(message = "Date is Mandatory")
+    @NotNull(message = "Date is Mandatory")
     private LocalDate date;
 
     @NotNull(message = "Worked hours should not be null")

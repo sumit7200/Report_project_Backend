@@ -17,7 +17,7 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public UserDto createUser(SignupRequest signupRequest) throws Exception {
-        User user=new User();
+        User user = new User();
         user.setName(signupRequest.getName());
         user.setEmail(signupRequest.getEmail());
         user.setPassword(new BCryptPasswordEncoder().encode(signupRequest.getPassword()));
